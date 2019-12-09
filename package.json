@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/pwc-sliding-panel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A panel that slides open from the sides of the page when you click a handle.",
   "keywords": [
     "paraboly",
@@ -38,5 +38,8 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.3.3"
+  },
+  "dependencies": {
+    "@stencil/sass": "^1.1.1"
   }
 }

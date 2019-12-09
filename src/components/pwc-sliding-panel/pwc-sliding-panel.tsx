@@ -2,7 +2,7 @@ import { Component, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "pwc-sliding-panel",
-  styleUrl: "pwc-sliding-panel.css",
+  styleUrl: "pwc-sliding-panel.scss",
   shadow: false
 })
 export class PwcSlidingPanelComponent {
@@ -14,7 +14,7 @@ export class PwcSlidingPanelComponent {
 
     return (
       <div
-        class={`pwc-sliding-panel__pwc-theme pwc-sliding-panel__hidable ${positionClass} ${
+        class={`pwc-theme pwc-sliding-panel__hidable ${positionClass} ${
           this.toggled ? "pwc-sliding-panel__active" : ""
         }`}
       >
