@@ -1,20 +1,20 @@
 {
-  "name": "@paraboly/pwc-web-component-template",
+  "name": "@paraboly/pwc-sliding-panel",
   "version": "0.0.1",
-  "description": "Template repository for Paraboly Web Component Libraries",
-    "keywords": [
-	"paraboly",
+  "description": "A panel that slides open from the sides of the page when you click a handle.",
+  "keywords": [
+    "paraboly",
     "stencil",
-	"stenciljs",
-	"web-component",
-	"webcomponent",
-	"ui",
-	"frontend"
+    "stenciljs",
+    "web-component",
+    "webcomponent",
+    "ui",
+    "frontend"
   ],
   "homepage": "https://www.paraboly.com",
-  "bugs": "https://github.com/Paraboly/pwc-web-component-template/issues",
-  "repository": "git@github.com:Paraboly/pwc-web-component-template.git",
-  "author": "Author (https://author.url.here/) <author@email.com>",
+  "bugs": "https://github.com/Paraboly/pwc-sliding-panel/issues",
+  "repository": "git@github.com:Paraboly/pwc-sliding-panel.git",
+  "author": "starikcetin (https://github.com/starikcetin) <cetinsamedtarik@gmail.com>",
   "license": "MIT",
   "peerDependencies": {},
   "main": "dist/index.js",
@@ -24,7 +24,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
+  "unpkg": "dist/pwc-sliding-panel/pwc-sliding-panel.js",
   "files": [
     "dist/",
     "loader/"
