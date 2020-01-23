@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/pwc-sliding-panel",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A panel that slides open from the sides of the page when you click a handle.",
   "keywords": [
     "paraboly",

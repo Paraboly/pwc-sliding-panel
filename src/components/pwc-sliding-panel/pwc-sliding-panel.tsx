@@ -5,7 +5,7 @@ import { Component, Prop, h } from "@stencil/core";
   styleUrl: "pwc-sliding-panel.scss",
   shadow: false
 })
-export class PwcSlidingPanelComponent {
+export class PwcSlidingPanel {
   @Prop() toggled: boolean = false;
   @Prop() position: "left" | "right" = "left";
 
