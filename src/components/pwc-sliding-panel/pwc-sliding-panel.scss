@@ -1,11 +1,12 @@
 :root {
   --pwc-sliding-panel___content-width: 200px;
+  --pwc-sliding-panel___toggle-width: 30px;
+  --pwc-sliding-panel___toggle-height: 30px;
   --pwc-sliding-panel___transition-duration: 0.25s;
 }
 
 pwc-sliding-panel {
-  display: flex;
-  align-items: flex-start;
+  display: block;
   position: absolute;
 
   transition: all var(--pwc-sliding-panel___transition-duration) ease;

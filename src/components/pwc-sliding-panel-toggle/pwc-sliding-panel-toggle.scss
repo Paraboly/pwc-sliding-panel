@@ -1,6 +1,23 @@
 pwc-sliding-panel-toggle {
+  width: var(--pwc-sliding-panel___toggle-width);
+  height: var(--pwc-sliding-panel___toggle-height);
+  position: absolute;
+  top: 0;
+  display: block;
   background: white;
   border: 1px black solid;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+/** left **/
+
+pwc-sliding-panel[anchor="left"] > pwc-sliding-panel-toggle {
+  right: calc(var(--pwc-sliding-panel___toggle-width) * -1);
+}
+
+/** right **/
+
+pwc-sliding-panel[anchor="right"] > pwc-sliding-panel-toggle {
+  left: calc(var(--pwc-sliding-panel___toggle-width) * -1);
 }
