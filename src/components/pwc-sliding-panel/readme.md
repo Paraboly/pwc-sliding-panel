@@ -7,8 +7,8 @@
 
 | Property   | Attribute  | Description | Type                | Default  |
 | ---------- | ---------- | ----------- | ------------------- | -------- |
+| `active`   | `active`   |             | `boolean`           | `false`  |
 | `position` | `position` |             | `"left" \| "right"` | `"left"` |
-| `toggled`  | `toggled`  |             | `boolean`           | `false`  |
 
 
 ----------------------------------------------
