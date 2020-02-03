@@ -11,8 +11,8 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface PwcSlidingPanel {
+    'active': boolean;
     'position': "left" | "right";
-    'toggled': boolean;
   }
 }
 
@@ -31,8 +31,8 @@ declare global {
 
 declare namespace LocalJSX {
   interface PwcSlidingPanel {
+    'active'?: boolean;
     'position'?: "left" | "right";
-    'toggled'?: boolean;
   }
 
   interface IntrinsicElements {

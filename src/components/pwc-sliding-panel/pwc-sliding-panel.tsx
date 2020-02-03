@@ -1,4 +1,4 @@
-import { Component, Prop, h } from "@stencil/core";
+import { Component, Prop, h, Element, Watch } from "@stencil/core";
 
 @Component({
   tag: "pwc-sliding-panel",
@@ -6,24 +6,16 @@ import { Component, Prop, h } from "@stencil/core";
   shadow: false
 })
 export class PwcSlidingPanel {
-  @Prop() toggled: boolean = false;
-  @Prop() position: "left" | "right" = "left";
+  @Element() root: HTMLElement;
+
+  @Prop({ reflect: true }) active: boolean = false;
+
+  @Prop({ reflect: true }) position: "left" | "right" = "left";
 
   render() {
-    const positionClass = "pwc-sliding-panel__" + this.position;
-
-    return (
-      <div
-        class={`pwc-theme pwc-sliding-panel__hidable ${positionClass} ${
-          this.toggled ? "pwc-sliding-panel__active" : ""
-        }`}
-      >
-        <a
-          class="pwc-sliding-panel__toggle"
-          onClick={() => (this.toggled = !this.toggled)}
-        ></a>
-        <slot />
-      </div>
-    );
+    return [
+      <a class="handle" onClick={() => (this.active = !this.active)}></a>,
+      <slot />
+    ];
   }
 }
