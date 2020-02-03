@@ -5,46 +5,50 @@
  * It contains typing information for all components that exist in this project.
  */
 
-import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
+
 
 export namespace Components {
   interface PwcSlidingPanel {
-    active: boolean;
-    anchor: "left" | "right";
+    'active': boolean;
+    'anchor': "left" | "right";
   }
 }
 
 declare global {
-  interface HTMLPwcSlidingPanelElement
-    extends Components.PwcSlidingPanel,
-      HTMLStencilElement {}
+
+
+  interface HTMLPwcSlidingPanelElement extends Components.PwcSlidingPanel, HTMLStencilElement {}
   var HTMLPwcSlidingPanelElement: {
     prototype: HTMLPwcSlidingPanelElement;
     new (): HTMLPwcSlidingPanelElement;
   };
   interface HTMLElementTagNameMap {
-    "pwc-sliding-panel": HTMLPwcSlidingPanelElement;
+    'pwc-sliding-panel': HTMLPwcSlidingPanelElement;
   }
 }
 
 declare namespace LocalJSX {
   interface PwcSlidingPanel {
-    active?: boolean;
-    anchor?: "left" | "right";
+    'active'?: boolean;
+    'anchor'?: "left" | "right";
   }
 
   interface IntrinsicElements {
-    "pwc-sliding-panel": PwcSlidingPanel;
+    'pwc-sliding-panel': PwcSlidingPanel;
   }
 }
 
 export { LocalJSX as JSX };
 
+
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      "pwc-sliding-panel": LocalJSX.PwcSlidingPanel &
-        JSXBase.HTMLAttributes<HTMLPwcSlidingPanelElement>;
+      'pwc-sliding-panel': LocalJSX.PwcSlidingPanel & JSXBase.HTMLAttributes<HTMLPwcSlidingPanelElement>;
     }
   }
 }
+
+

@@ -5,10 +5,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                | Default  |
-| ---------- | ---------- | ----------- | ------------------- | -------- |
-| `active`   | `active`   |             | `boolean`           | `false`  |
-| `position` | `position` |             | `"left" \| "right"` | `"left"` |
+| Property | Attribute | Description | Type                | Default  |
+| -------- | --------- | ----------- | ------------------- | -------- |
+| `active` | `active`  |             | `boolean`           | `false`  |
+| `anchor` | `anchor`  |             | `"left" \| "right"` | `"left"` |
 
 
 ----------------------------------------------
