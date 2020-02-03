@@ -1,36 +1,15 @@
 :root {
   --pwc-sliding-panel___content-width: 200px;
-  --pwc-sliding-panel___handle-width: 30px;
-  --pwc-sliding-panel___handle-height: 30px;
   --pwc-sliding-panel___transition-duration: 0.25s;
 }
 
-/** common **/
-
 pwc-sliding-panel {
+  display: flex;
+  align-items: flex-start;
   position: absolute;
 
   transition: all var(--pwc-sliding-panel___transition-duration) ease;
-}
-
-.pwc-sliding-panel___content {
-  display: block;
-  width: var(--pwc-sliding-panel___content-width);
-  min-height: var(--pwc-sliding-panel___handle-height);
-
-  background: white;
-  border: 1px black solid;
-}
-
-.pwc-sliding-panel___toggle {
-  position: absolute;
-  display: block;
-  width: var(--pwc-sliding-panel___handle-width);
-  height: var(--pwc-sliding-panel___handle-height);
-
-  background: white;
-  border: 1px black solid;
-  cursor: pointer;
+  box-sizing: border-box;
 }
 
 /** left **/
@@ -39,12 +18,8 @@ pwc-sliding-panel[anchor="left"] {
   left: calc(var(--pwc-sliding-panel___content-width) * -1);
 }
 
-pwc-sliding-panel[anchor="left"][active] {
+pwc-sliding-panel[anchor="left"].active {
   left: 0px;
-}
-
-pwc-sliding-panel[anchor="left"] > .pwc-sliding-panel___toggle {
-  right: calc(var(--pwc-sliding-panel___handle-width) * -1);
 }
 
 /** right **/
@@ -53,10 +28,6 @@ pwc-sliding-panel[anchor="right"] {
   right: calc(var(--pwc-sliding-panel___content-width) * -1);
 }
 
-pwc-sliding-panel[anchor="right"][active] {
+pwc-sliding-panel[anchor="right"].active {
   right: 0px;
-}
-
-pwc-sliding-panel[anchor="right"] > .pwc-sliding-panel___toggle {
-  left: calc(var(--pwc-sliding-panel___handle-width) * -1);
 }
