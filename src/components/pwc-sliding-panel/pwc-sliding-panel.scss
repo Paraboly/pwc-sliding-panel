@@ -18,7 +18,7 @@ pwc-sliding-panel[anchor="left"] {
   left: calc(var(--pwc-sliding-panel___content-width) * -1);
 }
 
-pwc-sliding-panel[anchor="left"].active {
+pwc-sliding-panel[anchor="left"].pwc-sliding-panel___active {
   left: 0px;
 }
 
@@ -28,6 +28,6 @@ pwc-sliding-panel[anchor="right"] {
   right: calc(var(--pwc-sliding-panel___content-width) * -1);
 }
 
-pwc-sliding-panel[anchor="right"].active {
+pwc-sliding-panel[anchor="right"].pwc-sliding-panel___active {
   right: 0px;
 }

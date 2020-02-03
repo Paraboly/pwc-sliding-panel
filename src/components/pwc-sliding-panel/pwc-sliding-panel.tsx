@@ -12,9 +12,9 @@ export class PwcSlidingPanel {
   @Watch("active")
   activeWatchHandler(newValue) {
     if (newValue) {
-      this.root.classList.add("active");
+      this.root.classList.add("pwc-sliding-panel___active");
     } else {
-      this.root.classList.remove("active");
+      this.root.classList.remove("pwc-sliding-panel___active");
     }
   }
 
